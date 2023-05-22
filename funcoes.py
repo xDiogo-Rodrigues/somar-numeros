@@ -5,4 +5,10 @@ def is_int(param):
 def somar(*args):
     return sum(args)
 
-
+def criar_funcao(func,*args):
+    def interna():
+        for arg in args:
+            is_int(arg)
+        resultado = func(*args)
+        return resultado
+    return interna
