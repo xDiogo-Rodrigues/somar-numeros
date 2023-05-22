@@ -12,3 +12,4 @@ def criar_funcao(func,*args):
         resultado = func(*args)
         return resultado
     return interna
+
